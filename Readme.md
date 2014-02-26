@@ -1,4 +1,5 @@
 Heroku buildpack: Python, Numpy, Scipy, Scikit-learn
+Forked from: https://github.com/dbrgn/heroku-buildpack-python-sklearn
 ====================================================
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks)
@@ -35,11 +36,11 @@ supported versions are:
 
 Then specify the buildpack as usual. For a new app:
 
-    heroku create --buildpack https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+    heroku create --buildpack https://github.com/naushadzaman/heroku-buildpack-python-sklearn/
 
 For an existing app:
 
-    heroku config:set BUILDPACK_URL=https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+    heroku config:set BUILDPACK_URL=https://github.com/naushadzaman/heroku-buildpack-python-sklearn/
 
 Demo
 ----
@@ -47,7 +48,7 @@ Demo
     $ mkdir testheroku
     $ cd testheroku
     $ git init
-    $ heroku create --buildpack https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+    $ heroku create --buildpack https://github.com/naushadzaman/heroku-buildpack-python-sklearn/
     $ echo -e "numpy==1.7.0\nscipy==0.11.0\nscikit-learn==0.13.1" > requirements.txt
     $ git add requirements.txt
     $ git commit -m 'Added requirements'
